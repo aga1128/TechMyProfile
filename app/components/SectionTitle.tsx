@@ -1,7 +1,7 @@
 type props = {
   title: string;
 }
-export default function SectionTitle({ title }: props){
+const SectionTitle = ({ title }: props) => {
   return (
       <>
           <h3 className="
@@ -13,3 +13,5 @@ export default function SectionTitle({ title }: props){
       </>
   )
 }
+
+export default SectionTitle

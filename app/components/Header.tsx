@@ -19,10 +19,10 @@ const Header = () => {
             <a href="/" className="inline-block w-28 px-5 py-7 bg-red-400 text-center">Top</a>             
           </li>
           <li className="">
-            <a href="" className="inline-block w-28 px-5 py-7 bg-red-300 text-center">Apps</a>              
+            <a href="/my-apps" className="inline-block w-28 px-5 py-7 bg-red-300 text-center">Apps</a>              
           </li>
           <li className="">
-            <a href="" className="inline-block w-28 px-5 py-7 bg-red-200 text-center">Jobs</a>               
+            <a href="/my-jobs" className="inline-block w-28 px-5 py-7 bg-red-200 text-center">Jobs</a>               
           </li>
         </ul>
       </nav>
