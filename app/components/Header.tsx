@@ -6,7 +6,7 @@ const Header = () => {
     <header className="fixed z-50 flex justify-between items-center max-w-[1920px] w-full mx-auto px-6 shadow-xs bg-header-color shadow-bottom-lg">
       <h1 className="flex items-center gap-5 text-black text-xl">
         <Image         
-          src="/images/value2.png"
+          src="/images/icon.png"
           alt=""
           width={50}
           height={50} 

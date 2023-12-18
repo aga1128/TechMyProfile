@@ -6,7 +6,7 @@ const Footer = () => {
     <div className="flex flex-col items-center bg-sub-color py-[50px] text-white">
     <div className="mb-12">
       <Image 
-        src="/images/value2.png"
+        src="/images/icon.png"
         alt=""
         width={100}
         height={100}
