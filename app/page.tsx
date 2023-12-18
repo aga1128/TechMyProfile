@@ -3,7 +3,7 @@ import SectionTitle from './components/SectionTitle'
 
 export default function Home() {
   return( 
-    <main className="max-w-[1920px] py-20">
+    <main className="max-w-[1920px] pt-20">
       <section className="my-20">
         <SectionTitle title="About" />
         <div className="flex justify-center gap-8 items-center p-10">
