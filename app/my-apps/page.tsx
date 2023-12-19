@@ -4,6 +4,7 @@ import FlexItemBox from '../components/FlexItemBox'
 import { myAppItem } from '../data/myAppData'
 
 export default function MyApps() {
+
   return( 
     <main className="max-w-[1920px] pt-20">
       <section className="my-20">
