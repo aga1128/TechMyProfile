@@ -23,18 +23,18 @@ export default async function StaticDetailPage({
 }) {
  const post = await getDetail(postId);
 
- // ページの生成された時間を取得
- const time = new Date().toLocaleString();
-
  if (!post) {
   notFound();
  }
-console.log(post.body)
+
  return (
-  <div>
-   <h1>{ post.title }</h1>
-   <h2>{ time }</h2>
-   <div>{ parse( post.body ) }</div>
-  </div>
+  <main className="max-w-[1920px] pt-20">
+    <section className="my-20">
+      <div className="max-w-[750px] w-full mx-auto">
+        <h1 className="prose text-2xl font-bold mb-20">{ post.title }</h1>
+        <div className="prose max-w-[750px] w-full">{ parse( post.body ) }</div>
+      </div>
+    </section>
+  </main>
  );
 }
