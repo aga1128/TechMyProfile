@@ -12,7 +12,7 @@ const Header = () => {
             width={50}
             height={50} 
           />
-          <p>It's&nbsp;Me</p>
+          <p>It&apos;s&nbsp;Me</p>
         </a>
       </h1>
       <nav className="flex justify-end items-center">

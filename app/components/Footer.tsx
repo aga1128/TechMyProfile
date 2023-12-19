@@ -16,7 +16,7 @@ const Footer = () => {
           <span className="mr-2"><small>CREATED&nbsp;BY&nbsp;</small></span>
           <span className="font-bold">阿川&nbsp;俊生&nbsp;(AgawaToshiki) </span>
       </p>
-    <p><small>&copy;&nbsp;2023&nbsp;It's Me</small></p>
+    <p><small>&copy;&nbsp;2023&nbsp;It&apos;s Me</small></p>
   </div>
   )
 }
