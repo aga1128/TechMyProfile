@@ -10,6 +10,7 @@ const id = async() => {
   const data = await client.get({
     endpoint: 'blog',
   })
+  const contents = data.contents
   return (
     // <main className="max-w-[1920px] pt-20">
     //   <section className="my-20">
@@ -18,7 +19,11 @@ const id = async() => {
     // </main>
     <>
       <main>
-        <div>{data.contents.title}</div>
+        <div>
+          {contents.map((x: any) => (
+            x.title
+          ))}
+        </div>
       </main>
     </>
   )
