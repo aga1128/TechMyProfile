@@ -15,7 +15,7 @@ type Props = {
 const FlexItemBox = ({ id, src, alt, description, path, style }: Props) => {
   const ref = `${path}/${id}`;
   return (
-    <a href={ ref } className="block flex flex-col justify-center items-center w-[calc(50%_-_2rem)] rounded-xl-bottom">
+    <a href={ ref } className="block flex flex-col justify-center items-center w-[calc(50%_-_2rem)] rounded-xl-bottom max-md:w-full">
       <div className="flex justify-center items-center w-full h-[200px] p-10 bg-sub-color">
       <Image 
         src={ src }

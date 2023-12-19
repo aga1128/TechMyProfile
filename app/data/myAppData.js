@@ -1,3 +1,5 @@
+import { markdownString } from "./markdown"
+
 export const myAppItem = [
   {
     id: 1,
@@ -8,7 +10,8 @@ export const myAppItem = [
     style: {
       width: 150,
       height: 150
-    }
+    },
+    contents: markdownString.nestjs,
   },
   {
     id: 2,
@@ -19,7 +22,8 @@ export const myAppItem = [
     style: {
       width: 150,
       height: 150
-    }
+    },
+    contents: markdownString.vuejs,
   },
   {
     id: 3,
@@ -30,6 +34,7 @@ export const myAppItem = [
     style: {
       width: 1576,
       height: 318
-    }
+    },
+    contents: markdownString.nextjs,
   },
 ]

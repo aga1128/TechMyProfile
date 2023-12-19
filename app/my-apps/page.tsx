@@ -8,7 +8,7 @@ export default function MyApps() {
     <main className="max-w-[1920px] pt-20">
       <section className="my-20">
         <SectionTitle title="My-Apps" />
-        <div className="flex justify-between items-start flex-wrap gap-8 max-w-[750px] mx-auto p-10">
+        <div className="flex justify-between items-start flex-wrap gap-8 gap-y-8 max-w-[750px] mx-auto p-10">
           {myAppItem.map((item) => (
             <FlexItemBox 
               key={ item.id }
