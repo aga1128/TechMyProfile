@@ -1,6 +1,7 @@
 'use client'
 import React, { useState } from 'react';
 import Image from 'next/image';
+import Link from "next/link";
 
 const Header = () => {
   const [isOpen, setOpen] = useState<boolean>(false);
@@ -11,32 +12,50 @@ const Header = () => {
     setOpen(false);
   }
   return (
-    <header className="fixed z-50 flex justify-between items-center max-w-[1920px] w-full mx-auto px-6 shadow-xs bg-header-color shadow-bottom-lg">
+    <header className="py-6 px-4 fixed z-20 w-full bg-header-color flex justify-between items-center">
       <h1>
-        <a href="/" className="block flex items-center gap-5 text-xl">
+        <Link className="z-50 block flex items-center gap-5 text-xl" href="/" onClick={handleMenuClose}>
           <Image         
-            src="/images/icon.png"
-            alt=""
-            width={50}
-            height={50} 
-          />
-          <p>It&apos;s&nbsp;Me</p>
-        </a>
+                src="/images/icon.png"
+                alt=""
+                width={50}
+                height={50} 
+              />
+          <p className="font-bold">It&apos;s&nbsp;Me</p>
+        </Link>
       </h1>
-      <nav className="flex justify-end items-center">
-        <ul className="flex justify-between items-center text-xl font-semibold">
-          <li className="">
-            <a href="/" className="inline-block w-28 px-5 py-7 bg-red-400 text-center">Top</a>             
+      <nav
+        className={
+          isOpen
+            ? "z-40 bg-header-color fixed top-0 right-0 bottom-0 left-0 h-screen flex flex-col"
+            : "fixed right-[-100%] md:right-4"
+        }
+      >
+        <ul
+          className={
+            isOpen
+              ? "flex h-screen justify-center items-center flex-col gap-12 text-xl"
+              : "block md:flex"
+          }
+        >
+          <li>
+            <Link onClick={handleMenuClose} href="/" className="md:p-10 p-4 font-bold">
+              Top
+            </Link>
           </li>
-          <li className="">
-            <a href="/my-apps" className="inline-block w-28 px-5 py-7 bg-red-300 text-center">Apps</a>              
+          <li>
+            <Link onClick={handleMenuClose} href="/my-apps" className="md:p-10 p-4 font-bold">
+              Apps
+            </Link>
           </li>
-          <li className="">
-            <a href="/my-jobs" className="inline-block w-28 px-5 py-7 bg-red-200 text-center">Jobs</a>               
+          <li>
+            <Link onClick={handleMenuClose} href="/my-jobs" className="md:p-10 p-4 font-bold">
+              Jobs
+            </Link>
           </li>
         </ul>
       </nav>
-      <button className="z-50 space-y-2 md:hidden" onClick={ handleMenuOpen }>
+      <button className="z-50 space-y-2 md:hidden" onClick={handleMenuOpen}>
         <span
           className={
             isOpen
