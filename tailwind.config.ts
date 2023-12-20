@@ -13,7 +13,8 @@ const config: Config = {
       colors: {
         'main-color': '#C9F2F3',
         'sub-color': '#2A3232',
-        'header-color': '#EDEFE1'
+        'header-color': '#EDEFE1',
+        'font-color': '#374151'
       }
     },
   },

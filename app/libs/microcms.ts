@@ -9,7 +9,7 @@ import type {
   id: string;
   title: string;
   body: string;
-  description: string;
+  category: string;
   eyecatch?: MicroCMSImage;
  } & MicroCMSDate;
 
@@ -26,14 +26,25 @@ import type {
   apiKey: process.env.MICROCMS_API_KEY as string,
  });
 
- export const getList = async (queries?: MicroCMSQueries) => {
+ export const getListApp = async (queries?: MicroCMSQueries) => {
   const listData = await client.getList<Blog>({
    endpoint: "blog",
-   queries,
-   
+   queries: {
+    fields: "id,title,body,eyecatch",
+    filters: "category[equals]app",
+    },
   });
-  await new Promise((resolve) => setTimeout(resolve, 3000));
+  return listData;
+}
 
+export const getListJob = async (queries?: MicroCMSQueries) => {
+  const listData = await client.getList<Blog>({
+   endpoint: "blog",
+   queries: {
+    fields: "id,title,body,eyecatch",
+    filters: "category[equals]job",
+    },
+  });
   return listData;
 }
 

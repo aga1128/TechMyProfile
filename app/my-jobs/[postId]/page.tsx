@@ -1,12 +1,12 @@
 import React from 'react'
 import { notFound } from "next/navigation";
 import parse from "html-react-parser";
-import { getDetail, getListApp } from "../../libs/microcms";
+import { getDetail, getListJob } from "../../libs/microcms";
 
 export const revalidate = 0;
 
 export async function generateStaticParams() {
- const { contents } = await getListApp();
+ const { contents } = await getListJob();
  const paths = contents.map((post) => {
   return {
    postId: post.id,
