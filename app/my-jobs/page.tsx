@@ -14,6 +14,14 @@ export default async function MyJobs() {
     return <h1>No contents</h1>;
    }
 
+   contents.forEach((post) => {
+    const maxLength = 53
+    if (post.title.length > maxLength) {
+      post.title = post.title.substring(0, maxLength) + "...";
+    }
+  });
+
+
   return( 
     <main className="max-w-[1920px] pt-20 min-h-screen">
       <section className="my-20">
@@ -45,8 +53,8 @@ export default async function MyJobs() {
                     )}
                     
                   </div>
-                  <div className="w-full bg-header-color rounded-xl-bottom p-4">
-                    <p>
+                  <div className="w-full h-20 bg-header-color rounded-xl-bottom p-4">
+                    <p id="post-title" className="text-ellipsis overflow-hidden">
                       { post.title }
                     </p>
                   </div>

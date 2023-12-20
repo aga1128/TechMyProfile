@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { notFound } from "next/navigation";
 import parse from "html-react-parser";
 import { getDetail, getListJob } from "../../libs/microcms";

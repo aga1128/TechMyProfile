@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 import Link from "next/link";
-import Image from 'next/image'
-import SectionTitle from '../components/SectionTitle'
-import { getListApp } from "../libs/microcms"
+import Image from 'next/image';
+import SectionTitle from '../components/SectionTitle';
+import { getListApp } from "../libs/microcms";
 
 //キャッシュを利用しない
 export const revalidate = 0;
@@ -12,6 +12,13 @@ export default async function MyApps() {
   if (!contents || contents.length === 0) {
     return <h1>No contents</h1>;
    }
+
+   contents.forEach((post) => {
+    const maxLength = 53
+    if (post.title.length > maxLength) {
+      post.title = post.title.substring(0, maxLength) + "...";
+    }
+  });
 
   return( 
     <main className="max-w-[1920px] pt-20 min-h-screen">
@@ -44,8 +51,8 @@ export default async function MyApps() {
                     )}
                     
                   </div>
-                  <div className="w-full bg-header-color rounded-xl-bottom p-4">
-                    <p>
+                  <div className="w-full h-20 bg-header-color rounded-xl-bottom p-4">
+                    <p id="post-title" className="text-ellipsis overflow-hidden">
                       { post.title }
                     </p>
                   </div>

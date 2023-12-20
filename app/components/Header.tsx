@@ -1,11 +1,11 @@
-import React from 'react'
-import Image from 'next/image'
+import React from 'react';
+import Image from 'next/image';
 
 const Header = () => {
   return (
     <header className="fixed z-50 flex justify-between items-center max-w-[1920px] w-full mx-auto px-6 shadow-xs bg-header-color shadow-bottom-lg">
       <h1>
-        <a href="/" className="block flex items-center gap-5 text-black text-xl">
+        <a href="/" className="block flex items-center gap-5 text-xl">
           <Image         
             src="/images/icon.png"
             alt=""
