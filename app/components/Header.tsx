@@ -1,7 +1,15 @@
-import React from 'react';
+'use client'
+import React, { useState } from 'react';
 import Image from 'next/image';
 
 const Header = () => {
+  const [isOpen, setOpen] = useState<boolean>(false);
+  const handleMenuOpen = () => {
+    setOpen(!isOpen);
+  }
+  const handleMenuClose = () => {
+    setOpen(false);
+  }
   return (
     <header className="fixed z-50 flex justify-between items-center max-w-[1920px] w-full mx-auto px-6 shadow-xs bg-header-color shadow-bottom-lg">
       <h1>
@@ -28,6 +36,27 @@ const Header = () => {
           </li>
         </ul>
       </nav>
+      <button className="z-50 space-y-2 md:hidden" onClick={ handleMenuOpen }>
+        <span
+          className={
+            isOpen
+              ? "block w-8 h-0.5 bg-gray-600 translate-y-2.5 rotate-45 duration-300"
+              : "block w-8 h-0.5 bg-gray-600 duration-300"
+          }
+        />
+        <span
+          className={
+            isOpen ? "block opacity-0 duration-300" : "block w-8 h-0.5 bg-gray-600 duration-300"
+          }
+        />
+        <span
+          className={
+            isOpen
+              ? "block w-8 h-0.5 bg-gray-600 -rotate-45 duration-300"
+              : "block w-8 h-0.5 bg-gray-600 duration-300"
+          }
+        />
+      </button>
     </header>
   )
 }

@@ -4,9 +4,9 @@ import SectionTitle from './components/SectionTitle';
 export default function Home() {
   return( 
     <main className="max-w-[1920px] pt-20 min-h-screen">
-      <section className="my-20">
+      <section className="my-20 max-md:mb-10">
         <SectionTitle title="About" />
-        <div className="flex justify-center gap-8 items-center p-10">
+        <div className="flex justify-center gap-8 items-center p-10 max-md:flex-col">
           <div>
             <Image
               src="/images/profile.png"
@@ -17,7 +17,7 @@ export default function Home() {
             />
           </div>
           <div className="max-w-[500px]">
-            <p className="pb-2 text-2xl">阿川&nbsp;俊生<small>(Agawa&nbsp;Toshiki)</small></p>
+            <p className="pb-2 text-2xl max-md:text-xl">阿川&nbsp;俊生<small>(Agawa&nbsp;Toshiki)</small></p>
             <div>
               <p>
                 広島県在住の28歳。<br />
@@ -28,10 +28,10 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="my-20">
+      <section className="my-20 max-md:my-10">
         <SectionTitle title="Likes" />
-        <div className="flex justify-center gap-8 items-start p-10">
-          <div className="flex flex-col justify-center items-center w-[500px] p-10">
+        <div className="flex justify-center gap-8 items-start p-10 max-lg:flex-col max-lg:items-center max-lg:w-full">
+          <div className="flex flex-col justify-center items-center max-w-[500px] w-full p-10">
             <p className="mb-8">アプリ開発</p>
             <div>
               <p className="break-all">
@@ -39,7 +39,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="flex flex-col justify-center items-center w-[500px] p-10">
+          <div className="flex flex-col justify-center items-center max-w-[500px] w-full p-10">
             <p className="mb-8">将棋</p>
             <div>
               <p className="break-all">
@@ -49,7 +49,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="flex flex-col justify-center items-center w-[500px] p-10">
+          <div className="flex flex-col justify-center items-center max-w-[500px] w-full p-10">
             <p className="mb-8">PCゲーム</p>
             <div>
               <p className="break-all">

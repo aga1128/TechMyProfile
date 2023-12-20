@@ -11,7 +11,7 @@ export default async function MyJobs() {
   const { contents } = await getListJob();
 
   if (!contents || contents.length === 0) {
-    return <h1>No contents</h1>;
+    return <h1 className="flex justify-center items-center min-h-screen">No contents</h1>;
    }
 
    contents.forEach((post) => {

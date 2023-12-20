@@ -5,6 +5,7 @@ import parse from "html-react-parser";
 
 export const revalidate = 0;
 
+//ブログ記事一覧からidを取得
 export async function generateStaticParams() {
  const { contents } = await getListApp();
  const paths = contents.map((post) => {
@@ -16,6 +17,7 @@ export async function generateStaticParams() {
  return [...paths];
 }
 
+//ルートのパラメータと一致する記事を取得
 export default async function StaticDetailPage({ params: { postId } }: { params: { postId: string } }) {
  const post = await getDetail(postId);
 

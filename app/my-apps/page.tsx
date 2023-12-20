@@ -10,7 +10,7 @@ export const revalidate = 0;
 export default async function MyApps() {
   const { contents } = await getListApp();
   if (!contents || contents.length === 0) {
-    return <h1>No contents</h1>;
+    return <h1 className="flex justify-center items-center min-h-screen">No contents</h1>;
    }
 
    contents.forEach((post) => {
