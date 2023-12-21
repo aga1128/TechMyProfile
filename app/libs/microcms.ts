@@ -55,8 +55,11 @@ export const getDetail = async (
   const detailData = await client.getListDetail<Blog>({
    endpoint: "blog",
    contentId,
-   queries,
+   queries: {
+    fields: "title,body"
+   },
   });
+  console.log(detailData)
  
   return detailData;
  };
