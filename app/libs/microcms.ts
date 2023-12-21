@@ -30,7 +30,7 @@ import type {
   const listData = await client.getList<Blog>({
    endpoint: "blog",
    queries: {
-    fields: "id,title,body,eyecatch",
+    fields: "id,title,eyecatch",
     filters: "category[equals]app",
     },
   });
@@ -41,7 +41,7 @@ export const getListJob = async (queries?: MicroCMSQueries) => {
   const listData = await client.getList<Blog>({
    endpoint: "blog",
    queries: {
-    fields: "id,title,body,eyecatch",
+    fields: "id,title,eyecatch",
     filters: "category[equals]job",
     },
   });
