@@ -32,7 +32,7 @@ export default async function MyJobs() {
                 <Link 
                   href={`/my-jobs/${post.id}`} 
                   key={ post.id }
-                  className="block flex flex-col justify-center items-center w-[calc(50%_-_2rem)] rounded-xl-bottom max-md:w-full"
+                  className="block flex flex-col justify-center items-center w-[calc(50%_-_2rem)] rounded-xl-bottom max-md:w-full relative top-0 transition-all duration-200 ease-out hover:-top-[3px] hover:shadow-lg"
                 >
                   <div className="flex justify-center items-center w-full h-[200px] p-10 bg-sub-color">
                     {(post.eyecatch) ? (

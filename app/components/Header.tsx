@@ -39,23 +39,23 @@ const Header = () => {
           }
         >
           <li>
-            <Link onClick={handleMenuClose} href="/" className="md:p-10 p-4 font-bold">
+            <Link onClick={handleMenuClose} href="/" className="block md:p-10 w-[120px] max-md:w-[200px] text-center rounded-lg transition-all duration-200 ease-out hover:text-header-color hover:bg-sub-color p-4 font-bold">
               Top
             </Link>
           </li>
           <li>
-            <Link onClick={handleMenuClose} href="/my-apps" className="md:p-10 p-4 font-bold">
+            <Link onClick={handleMenuClose} href="/my-apps" className="block md:p-10 w-[120px] max-md:w-[200px] text-center rounded-lg transition-all duration-200 ease-out hover:text-header-color hover:bg-sub-color p-4 font-bold">
               Apps
             </Link>
           </li>
           <li>
-            <Link onClick={handleMenuClose} href="/my-jobs" className="md:p-10 p-4 font-bold">
+            <Link onClick={handleMenuClose} href="/my-jobs" className="block md:p-10 w-[120px] max-md:w-[200px] text-center rounded-lg transition-all duration-200 ease-out hover:text-header-color hover:bg-sub-color p-4 font-bold">
               Jobs
             </Link>
           </li>
         </ul>
       </nav>
-      <button className="z-50 space-y-2 md:hidden" onClick={handleMenuOpen}>
+      <button className="z-50 space-y-2 p-1 md:hidden" onClick={handleMenuOpen}>
         <span
           className={
             isOpen
