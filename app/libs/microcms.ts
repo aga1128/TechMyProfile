@@ -59,7 +59,6 @@ export const getDetail = async (
     fields: "title,body"
    },
   });
-  console.log(detailData)
  
   return detailData;
  };
