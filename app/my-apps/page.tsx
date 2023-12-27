@@ -14,7 +14,7 @@ export default async function MyApps() {
    }
 
    contents.forEach((post) => {
-    const maxLength = 53
+    const maxLength = 48
     if (post.title.length > maxLength) {
       post.title = post.title.substring(0, maxLength) + "...";
     }
