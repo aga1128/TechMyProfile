@@ -14,13 +14,6 @@ export default async function MyJobs() {
     return <h1 className="flex justify-center items-center min-h-screen">No contents</h1>;
    }
 
-   contents.forEach((post) => {
-    const maxLength = 48
-    if (post.title.length > maxLength) {
-      post.title = post.title.substring(0, maxLength) + "...";
-    }
-  });
-
 
   return( 
     <main className="max-w-[1920px] pt-20 min-h-screen">
@@ -54,7 +47,7 @@ export default async function MyJobs() {
                     
                   </div>
                   <div className="w-full h-20 bg-header-color rounded-xl-bottom p-4">
-                    <p id="post-title" className="text-ellipsis overflow-hidden">
+                    <p id="post-title" className="line-clamp-2">
                       { post.title }
                     </p>
                   </div>
