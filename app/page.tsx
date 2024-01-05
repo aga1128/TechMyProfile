@@ -53,7 +53,7 @@ export default function Home() {
             <div>
               <p className="break-all">
                 仲の良い友達とやる究極の息抜き。<br />
-                よく遊ぶジャンルはFPS。やりすぎ注意。</p>
+                よく遊ぶジャンルはFPS。</p>
             </div>
           </div>
         </div>
