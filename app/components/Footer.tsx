@@ -20,7 +20,7 @@ const Footer = () => {
           <span className="mr-2"><small>CREATED&nbsp;BY&nbsp;</small></span>
           <span className="font-bold">阿川&nbsp;俊生&nbsp;(AgawaToshiki) </span>
         </div>
-        <Link href="https://github.com/AgawaToshiki" className="flex justify-center items-center gap-[5px]">
+        <Link href="https://github.com/AgawaToshiki" className="flex justify-center items-center w-[25%] mx-auto">
           <Image
             src="/images/github-mark-white.png"
             alt="Githubアイコン"
@@ -28,7 +28,7 @@ const Footer = () => {
             height={225}
             className="w-[15px] h-[15px]"
           />
-          <p>Github</p>
+          <span className="pl-[5px]">GitHub</span>
         </Link>
       </div>
       <p><small>&copy;&nbsp;2023&nbsp;It&apos;s Me</small></p>
