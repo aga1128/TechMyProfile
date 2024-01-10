@@ -11,8 +11,8 @@ export default function Home() {
             <Image
               src="/images/profile.png"
               alt=""
-              width={100}
-              height={100}
+              width={225}
+              height={225}
               className="rounded-[50%] object-cover w-[100px] h-[100px]"
             />
           </div>
