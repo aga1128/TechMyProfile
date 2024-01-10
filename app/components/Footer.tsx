@@ -20,7 +20,7 @@ const Footer = () => {
           <span className="mr-2"><small>CREATED&nbsp;BY&nbsp;</small></span>
           <span className="font-bold">阿川&nbsp;俊生&nbsp;(AgawaToshiki) </span>
         </div>
-        <Link href="https://github.com/AgawaToshiki" className="flex justify-center items-center w-[25%] mx-auto">
+        <Link href="https://github.com/AgawaToshiki" rel="noopener noreferrer" target="_blank" className="flex justify-center items-center w-[25%] mx-auto">
           <Image
             src="/images/github-mark-white.png"
             alt="Githubアイコン"
