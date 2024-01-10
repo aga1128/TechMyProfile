@@ -52,7 +52,7 @@ export default function Home() {
             <p className="mb-8">PCゲーム</p>
             <div>
               <p className="break-all">
-                仲の良い友達とやる究極の息抜き。<br />
+                仲の良い友達とやる息抜き。<br />
                 よく遊ぶジャンルはFPS。</p>
             </div>
           </div>
