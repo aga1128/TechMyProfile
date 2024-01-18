@@ -41,6 +41,7 @@ export default async function MyApps() {
                         alt="Eyecatch Image"
                         width={200}
                         height={200}
+                        className="w-full max-w-[150px] h-auto"
                       />
                     )}
                     
