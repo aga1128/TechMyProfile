@@ -49,11 +49,11 @@ export default function Home() {
             </div>
           </div>
           <div className="flex flex-col justify-center items-center max-w-[500px] w-full p-10">
-            <p className="mb-8">PCゲーム</p>
+            <p className="mb-8">読書</p>
             <div>
               <p className="break-all">
-                仲の良い友達とやる息抜き。<br />
-                よく遊ぶジャンルはFPS。</p>
+                Webや単行本でライトノベルを読むのが好きです。
+              </p>
             </div>
           </div>
         </div>
