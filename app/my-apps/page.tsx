@@ -1,6 +1,6 @@
 import React from 'react';
 import SectionTitle from '../components/SectionTitle';
-import PostItems from '../components/PostItems';
+import PostItems from '../components/Post/PostItems';
 import { getListApp } from "../libs/microcms";
 
 //キャッシュを利用しない
@@ -10,7 +10,7 @@ export default async function MyApps() {
   const { contents } = await getListApp();
   if (!contents || contents.length === 0) {
     return <h1 className="flex justify-center items-center min-h-screen">No contents</h1>;
-   }
+  }
 
 
   return( 
