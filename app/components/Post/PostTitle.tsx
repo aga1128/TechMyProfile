@@ -1,5 +1,4 @@
 import React from 'react'
-import { Blog } from '../../libs/microcms'
 
 type Props = {
   postTitle: string;

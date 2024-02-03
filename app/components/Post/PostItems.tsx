@@ -1,6 +1,5 @@
 import React from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
 import { Blog } from '../../libs/microcms'
 import PostImage from './PostImage'
 import PostTitle from './PostTitle'
