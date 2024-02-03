@@ -1,8 +1,6 @@
 import React from 'react'
-import Link from "next/link";
-import Image from 'next/image'
 import SectionTitle from '../components/SectionTitle'
-import PostItems from '../components/PostItems'
+import PostItems from '../components/Post/PostItems'
 import { getListJob } from "../libs/microcms"
 
 //キャッシュを利用しない
