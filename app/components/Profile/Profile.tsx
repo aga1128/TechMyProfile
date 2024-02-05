@@ -7,7 +7,7 @@ const Profile = () => {
       <div>
         <Image
           src="/images/profile.png"
-          alt=""
+          alt="プロフィール画像"
           width={225}
           height={225}
           className="rounded-[50%] object-cover w-[100px] h-[100px]"

@@ -12,7 +12,7 @@ const Header = () => {
     setOpen(false);
   }
   return (
-    <header className="py-6 px-4 fixed z-20 w-full bg-header-color flex justify-between items-center shadow-md">
+    <header className="py-6 px-4 fixed z-20 w-full bg-gray-50 flex justify-between items-center shadow-md">
       <h1>
         <Link className="z-50 block flex items-center gap-5 text-xl" href="/" onClick={handleMenuClose}>
           <Image         
