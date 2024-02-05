@@ -13,7 +13,7 @@ const Header = () => {
   }
   return (
     <header className="py-6 px-4 fixed z-20 w-full bg-gray-50 flex justify-between items-center shadow-md">
-      <h1>
+      <div>
         <Link className="z-50 block flex items-center gap-5 text-xl" href="/" onClick={handleMenuClose}>
           <Image         
                 src="/images/icon.png"
@@ -23,11 +23,11 @@ const Header = () => {
               />
           <p className="font-bold">It&apos;s&nbsp;Me</p>
         </Link>
-      </h1>
+      </div>
       <nav
         className={
           isOpen
-            ? "z-40 bg-header-color fixed top-0 right-0 bottom-0 left-0 h-screen flex flex-col"
+            ? "z-40 bg-gray-50 fixed top-0 right-0 bottom-0 left-0 h-screen flex flex-col"
             : "fixed right-[-100%] md:right-4"
         }
       >
@@ -39,17 +39,17 @@ const Header = () => {
           }
         >
           <li>
-            <Link onClick={handleMenuClose} href="/" className="block md:p-10 w-[120px] max-md:w-[200px] text-center rounded-lg transition-all duration-200 ease-out hover:text-header-color hover:bg-sub-color p-4 font-bold">
+            <Link onClick={handleMenuClose} href="/" className="block md:p-10 w-[120px] max-md:w-[200px] text-center rounded-lg transition-all duration-200 ease-out hover:text-gray-50 hover:bg-sub-color p-4 font-bold">
               Top
             </Link>
           </li>
           <li>
-            <Link onClick={handleMenuClose} href="/my-apps" className="block md:p-10 w-[120px] max-md:w-[200px] text-center rounded-lg transition-all duration-200 ease-out hover:text-header-color hover:bg-sub-color p-4 font-bold">
+            <Link onClick={handleMenuClose} href="/my-apps" className="block md:p-10 w-[120px] max-md:w-[200px] text-center rounded-lg transition-all duration-200 ease-out hover:text-gray-50 hover:bg-sub-color p-4 font-bold">
               Apps
             </Link>
           </li>
           <li>
-            <Link onClick={handleMenuClose} href="/my-jobs" className="block md:p-10 w-[120px] max-md:w-[200px] text-center rounded-lg transition-all duration-200 ease-out hover:text-header-color hover:bg-sub-color p-4 font-bold">
+            <Link onClick={handleMenuClose} href="/my-jobs" className="block md:p-10 w-[120px] max-md:w-[200px] text-center rounded-lg transition-all duration-200 ease-out hover:text-gray-50 hover:bg-sub-color p-4 font-bold">
               Jobs
             </Link>
           </li>

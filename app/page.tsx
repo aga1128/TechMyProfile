@@ -1,6 +1,7 @@
 import SectionTitle from './components/SectionTitle';
 import Profile from './components/Profile/Profile';
 import Contents from './components/Profile/Contents';
+import Image from 'next/image'
 
 export default function Home() {
   const likesItem = [
@@ -29,19 +30,28 @@ export default function Home() {
       description: "Webや単行本でライトノベルを読むのが好きです。",
       image: {
         url: "/images/book.png",
-        width: 929,
-        height: 967,
+        width: 1417,
+        height: 1276,
         alt: "読書"
       }
     }
   ]
   return( 
-    <main className="max-w-[1920px] pt-20 min-h-screen">
-      <section className="my-20 max-md:mb-10">
+    <main className="max-w-[1920px] pt-[98px] min-h-screen">
+      <section className="mb-30">
+        <div className="flex justify-center items-center p-16 bg-main-color text-center max-md:flex-col">
+          <div className="max-md:mb-4">
+            <h1 className="text-gray-50 text-4xl font-bold w-[300px] max-md:text-2xl">Portfolio</h1>
+            <span className="text-gray-50 text-lg w-[300px]">It&apos;s&nbsp;Me</span>
+          </div>
+          <Image src="/images/portfolio.png" alt="メイン画像" width={300} height={300} className="w-[300px] h-auto max-md:w-[200px]"/>
+        </div>
+      </section>
+      <section className="my-10 max-md:mb-10">
         <SectionTitle title="About" />
         <Profile />
       </section>
-      <section className="my-20 max-md:my-10">
+      <section className="my-10 max-md:my-10">
         <SectionTitle title="Likes" />
         <Contents items={likesItem}/>
       </section>

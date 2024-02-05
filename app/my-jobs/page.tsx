@@ -16,7 +16,7 @@ export default async function MyJobs() {
 
   return( 
     <main className="max-w-[1920px] pt-20 min-h-screen">
-      <section className="my-20">
+      <section className="mt-10">
         <SectionTitle title="My-Jobs" />
         <PostItems contents={ contents } path="my-jobs" />
       </section>
