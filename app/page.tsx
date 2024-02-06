@@ -1,6 +1,7 @@
 import SectionTitle from './components/SectionTitle';
 import Profile from './components/Profile/Profile';
 import Contents from './components/Profile/Contents';
+import IntersectionObserver from './components/IntersectionObserver';
 import Image from 'next/image'
 
 export default function Home() {
@@ -49,12 +50,16 @@ export default function Home() {
         </div>
       </section>
       <section className="my-10 max-md:mb-10">
-        <SectionTitle title="About" />
-        <Profile />
+        <IntersectionObserver>
+          <SectionTitle title="About" />
+          <Profile />
+        </IntersectionObserver>
       </section>
       <section className="my-10 max-md:my-10">
-        <SectionTitle title="Likes" />
-        <Contents items={likesItem}/>
+        <IntersectionObserver>
+          <SectionTitle title="Likes" />
+          <Contents items={likesItem}/>
+        </IntersectionObserver>
       </section>
     </main>
   )
