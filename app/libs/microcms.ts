@@ -32,6 +32,7 @@ import type {
    queries: {
     fields: "id,title,eyecatch",
     filters: "category[equals]app",
+    limit: 100
     },
   });
   return listData;
@@ -43,6 +44,7 @@ export const getListJob = async (queries?: MicroCMSQueries) => {
    queries: {
     fields: "id,title,eyecatch",
     filters: "category[equals]job",
+    limit: 100
     },
   });
   return listData;

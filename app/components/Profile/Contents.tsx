@@ -27,7 +27,7 @@ const Contents = ({ items }: Props) => {
                 { item.description }
               </p>
             </div>
-        </div>
+          </div>
         )
       })}
     </div>
