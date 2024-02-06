@@ -15,7 +15,7 @@ export default async function MyApps() {
 
   return( 
     <main className="max-w-[1920px] pt-20 min-h-screen">
-      <section className="my-20">
+      <section className="mt-10">
         <SectionTitle title="My-Apps" />
         <PostItems contents={ contents } path="my-apps" />
       </section>
