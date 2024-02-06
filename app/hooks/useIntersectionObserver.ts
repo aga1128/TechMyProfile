@@ -5,15 +5,20 @@ const useIntersectionObserver = () => {
   const targetRef = useRef(null);
 
   useEffect(() => {
+    const observerOptions = {
+      root: null,
+      rootMargin: '-70px',
+      threshold: 0.5
+    }
+    if(window.innerWidth < 1024) {
+      observerOptions.rootMargin = '-40px',
+      observerOptions.threshold = 0.3
+    }
     const observer = new IntersectionObserver(
       ([entry]) => {
         setIsVisible(entry.isIntersecting);
       },
-      {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.5
-      }
+      observerOptions
     );
 
     if (targetRef.current) {
