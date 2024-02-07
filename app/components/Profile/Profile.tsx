@@ -10,7 +10,7 @@ const Profile = () => {
           alt="プロフィール画像"
           width={225}
           height={225}
-          className="rounded-[50%] object-cover w-[100px] h-[100px]"
+          className="rounded-[50%] object-cover w-[150px] h-[150px]"
         />
       </div>
       <div className="max-w-[500px]">
