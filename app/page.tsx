@@ -42,9 +42,9 @@ export default function Home() {
     <main className="max-w-[1920px] pt-[98px] min-h-screen">
       <section className="mb-30">
         <div className="flex justify-center items-center p-16 bg-main-color text-center max-md:flex-col">
-          <div className="max-md:mb-4">
-            <h1 className="text-gray-50 text-4xl font-bold w-[300px] max-md:text-2xl">Portfolio</h1>
-            <span className="text-gray-50 text-lg w-[300px]">It&apos;s&nbsp;Me</span>
+          <div className="w-[300px] max-md:mb-4">
+            <h1 className="text-gray-50 text-5xl font-bold max-md:text-4xl">Portfolio</h1>
+            <span className="text-gray-50 text-2xl max-md:text-lg">It&apos;s&nbsp;Me</span>
           </div>
           <Image src="/images/portfolio.png" alt="メイン画像" width={300} height={300} className="w-[300px] h-auto max-md:w-[200px]"/>
         </div>
