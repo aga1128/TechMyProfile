@@ -20,8 +20,8 @@ const Contents = ({ items }: Props) => {
       {items.map((item) => {
         return (
           <div key={ item.title } className="flex flex-col justify-center items-center max-w-[500px] w-full p-10">
-            <p className="mb-8">{ item.title }</p>
-            <Image src={ item.image.url } alt={ item.image.alt } width={ item.image.width } height={ item.image.height } className="w-auto h-[100px] mb-8"/>
+            <p className="mb-8 text-lg">{ item.title }</p>
+            <Image src={ item.image.url } alt={ item.image.alt } width={ item.image.width } height={ item.image.height } className="w-auto h-[150px] mb-8"/>
             <div>
               <p className="break-all">
                 { item.description }

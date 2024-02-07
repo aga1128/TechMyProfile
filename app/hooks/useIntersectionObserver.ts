@@ -11,7 +11,7 @@ const useIntersectionObserver = () => {
       threshold: 0.5
     }
     if(window.innerWidth < 1024) {
-      observerOptions.rootMargin = '-40px',
+      observerOptions.rootMargin = '-20px',
       observerOptions.threshold = 0.3
     }
     const observer = new IntersectionObserver(
