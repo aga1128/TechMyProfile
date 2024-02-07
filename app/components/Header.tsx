@@ -39,17 +39,17 @@ const Header = () => {
           }
         >
           <li>
-            <Link onClick={ handleMenuClose } href="/" className="flex justify-center items-center w-[80px] h-[80px] md:p-10 max-md:w-[200px] max-md:h-[200px] text-center text-gray-50 bg-sub-color rounded-full transition-all duration-200 ease-out hover:bg-red-300 p-4 font-bold">
+            <Link onClick={ handleMenuClose } href="/" className="flex justify-center items-center w-[80px] h-[80px] md:p-10 max-md:w-[200px] max-md:h-[200px] text-center text-gray-50 bg-sub-color rounded-full transition-all duration-200 ease-out hover:bg-red-400 p-4 font-bold">
               Top
             </Link>
           </li>
           <li>
-            <Link onClick={ handleMenuClose } href="/my-apps" className="flex justify-center items-center w-[80px] h-[80px] md:p-10 max-md:w-[200px] max-md:h-[200px] text-center text-gray-50 bg-sub-color rounded-full transition-all duration-200 ease-out hover:bg-red-300  p-4 font-bold">
+            <Link onClick={ handleMenuClose } href="/my-apps" className="flex justify-center items-center w-[80px] h-[80px] md:p-10 max-md:w-[200px] max-md:h-[200px] text-center text-gray-50 bg-sub-color rounded-full transition-all duration-200 ease-out hover:bg-red-400  p-4 font-bold">
               Apps
             </Link>
           </li>
           <li>
-            <Link onClick={ handleMenuClose } href="/my-jobs" className="flex justify-center items-center w-[80px] h-[80px] md:p-10 max-md:w-[200px] max-md:h-[200px] text-center text-gray-50 bg-sub-color rounded-full transition-all duration-200 ease-out hover:bg-red-300  p-4 font-bold">
+            <Link onClick={ handleMenuClose } href="/my-jobs" className="flex justify-center items-center w-[80px] h-[80px] md:p-10 max-md:w-[200px] max-md:h-[200px] text-center text-gray-50 bg-sub-color rounded-full transition-all duration-200 ease-out hover:bg-red-400  p-4 font-bold">
               Jobs
             </Link>
           </li>
