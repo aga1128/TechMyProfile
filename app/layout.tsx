@@ -1,10 +1,7 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
 import './globals.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
-
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: "It's Me",
@@ -18,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja">
-      <body className={`${inter.className}, bg-gray-200 text-font-color`}>
+      <body className="bg-gray-200 text-font-color font-custom">
         <Header />
         {children}
         <Footer />

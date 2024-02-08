@@ -12,7 +12,10 @@ const config: Config = {
         'main-color': '#6bc2c3',
         'sub-color': '#2A3232',
         'font-color': '#374151'
-      }
+      },
+      fontFamily: {
+        custom: ['sans-serif'],
+      },
     },
   },
   plugins: [
