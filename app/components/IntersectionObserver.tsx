@@ -2,7 +2,7 @@
 import React from 'react';
 import useIntersectionObserver from '../hooks/useIntersectionObserver';
 
-const InterSectionObserver = ({ children }: { children: React.ReactNode }) => {
+const IntersectionObserver = ({ children }: { children: React.ReactNode }) => {
   const { isVisible, targetRef } = useIntersectionObserver();
 
   return (
@@ -12,4 +12,4 @@ const InterSectionObserver = ({ children }: { children: React.ReactNode }) => {
   );
 };
 
-export default InterSectionObserver;
+export default IntersectionObserver;
