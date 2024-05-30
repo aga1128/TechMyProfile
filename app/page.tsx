@@ -50,16 +50,14 @@ export default function Home() {
         </div>
       </section>
       <section className="my-10 max-md:mb-10">
-        <IntersectionObserver>
           <SectionTitle title="About" />
+        <IntersectionObserver>
           <Profile />
         </IntersectionObserver>
       </section>
       <section className="my-10 max-md:my-10">
-        <IntersectionObserver>
           <SectionTitle title="Likes" />
           <Contents items={likesItem}/>
-        </IntersectionObserver>
       </section>
     </main>
   )
