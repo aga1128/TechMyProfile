@@ -16,40 +16,52 @@ const Header = () => {
       <div>
         <Link className="z-50 block flex items-center gap-5 text-xl" href="/" onClick={ handleMenuClose }>
           <Image         
-                src="/images/icon.png"
-                alt=""
-                width={50}
-                height={50} 
-              />
+            src="/images/icon.png"
+            alt=""
+            width={50}
+            height={50} 
+          />
           <p className="font-bold">It&apos;s&nbsp;Me</p>
         </Link>
       </div>
       <nav
         className={
           isOpen
-            ? "z-40 bg-gray-50 fixed top-0 right-0 bottom-0 left-0 h-screen flex flex-col"
+            ? "z-40 bg-gray-50 fixed top-[98px] right-0 flex flex-col"
             : "fixed right-[-100%] md:right-4"
         }
       >
         <ul
           className={
             isOpen
-              ? "flex h-screen justify-center items-center flex-col gap-12 text-xl"
+              ? "flex justify-center items-center flex-col text-xl"
               : "block md:flex md:items-center gap-6"
           }
         >
           <li>
-            <Link onClick={ handleMenuClose } href="/" className="flex justify-center items-center w-[80px] h-[80px] md:p-10 max-md:w-[200px] max-md:h-[200px] text-center text-gray-50 bg-sub-color rounded-full transition-all duration-200 ease-out hover:bg-red-400 p-4 font-bold">
+            <Link 
+              onClick={ handleMenuClose } 
+              href="/" 
+              className="flex justify-center items-center w-[80px] h-[80px] md:p-10 max-md:w-[100px] max-md:h-[100px] text-center text-gray-50 bg-sub-color transition-all duration-200 ease-out hover:bg-red-400 p-4 font-bold"
+            >
               Top
             </Link>
           </li>
           <li>
-            <Link onClick={ handleMenuClose } href="/my-apps" className="flex justify-center items-center w-[80px] h-[80px] md:p-10 max-md:w-[200px] max-md:h-[200px] text-center text-gray-50 bg-sub-color rounded-full transition-all duration-200 ease-out hover:bg-red-400  p-4 font-bold">
+            <Link 
+              onClick={ handleMenuClose } 
+              href="/my-apps" 
+              className="flex justify-center items-center w-[80px] h-[80px] md:p-10 max-md:w-[100px] max-md:h-[100px] text-center text-gray-50 bg-sub-color transition-all duration-200 ease-out hover:bg-red-400  p-4 font-bold"
+            >
               Apps
             </Link>
           </li>
           <li>
-            <Link onClick={ handleMenuClose } href="/my-jobs" className="flex justify-center items-center w-[80px] h-[80px] md:p-10 max-md:w-[200px] max-md:h-[200px] text-center text-gray-50 bg-sub-color rounded-full transition-all duration-200 ease-out hover:bg-red-400  p-4 font-bold">
+            <Link 
+              onClick={ handleMenuClose } 
+              href="/my-jobs" 
+              className="flex justify-center items-center w-[80px] h-[80px] md:p-10 max-md:w-[100px] max-md:h-[100px] text-center text-gray-50 bg-sub-color transition-all duration-200 ease-out hover:bg-red-400  p-4 font-bold"
+            >
               Jobs
             </Link>
           </li>
