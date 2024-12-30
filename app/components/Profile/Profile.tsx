@@ -17,7 +17,7 @@ const Profile = () => {
         <p className="pb-2 text-2xl max-md:text-xl">阿川&nbsp;俊生<small>(Agawa&nbsp;Toshiki)</small></p>
         <div>
           <p>
-            広島県在住の28歳。<br />
+            広島県在住の29歳。<br />
             昔から考えて答えを導くことが好きで、プログラミングというワードに惹かれHTML/CSSの学習を始める。<br />
             現在はWebエンジニアを目指してフロントエンドはNext.js・React・Vue、バックエンドはNestJS・Expressと幅広く学習を進めています。
           </p>
