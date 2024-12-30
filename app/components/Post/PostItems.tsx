@@ -18,7 +18,7 @@ const PostItems = ({ contents, path }: PropsItems) => {
             <Link 
               href={`/${path}/${post.id}`} 
               key={ post.id }
-              className="flex flex-col justify-center items-center w-[calc(50%_-_2rem)] rounded-xl-bottom max-md:w-full relative top-0 transition-all duration-200 ease-out hover:-top-[3px] hover:shadow-lg active:top-0 active:shadow-none"
+              className="flex flex-col justify-center items-center w-[calc(50%_-_2rem)] rounded-xl-bottom shadow-lg relative top-0 transition-all duration-200 ease-out hover:where:scale-[1.03] active:shadow-none active:scale-[.97] max-md:w-full"
             >
               <PostImage postImage={ post.eyecatch }/>
               <PostTitle postTitle={ post.title }/>
