@@ -28,9 +28,9 @@ export default async function StaticDetailPage({ params: { postId } }: { params:
  return (
   <main className="max-w-[1920px] pt-20">
     <section className="my-20">
-      <div className="max-w-[700px] w-full mx-auto max-md:w-[90%]">
+      <div className="max-w-[800px] w-full mx-auto max-lg:w-[90%]">
         <h1 className="prose text-2xl font-bold mb-20 max-md:text-xl">{ post.title }</h1>
-        <div className="prose max-w-[700px] w-full">{ parse( post.body ) }</div>
+        <div className="prose max-w-[800px] w-full">{ parse( post.body ) }</div>
       </div>
     </section>
   </main>
