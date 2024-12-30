@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .prose .blog-heading {
+    @apply text-font-color;
+  }
+  .prose h2 {
+    @apply border-b border-gray-700 text-2xl max-md:text-xl;
+  }
+  .prose h3 {
+    @apply text-xl max-md:text-lg
+  }
+}
+
 @layer utilities {
   .shadow-bottom-lg {
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);

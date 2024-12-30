@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <header className="py-6 px-4 fixed z-20 w-full bg-gray-50 flex justify-between items-center shadow-md">
       <div>
-        <Link className="z-50 block flex items-center gap-5 text-xl" href="/" onClick={ handleMenuClose }>
+        <Link className="z-50 flex items-center gap-5 text-xl" href="/" onClick={ handleMenuClose }>
           <Image         
             src="/images/icon.png"
             alt=""
