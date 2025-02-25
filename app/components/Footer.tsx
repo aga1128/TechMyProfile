@@ -31,7 +31,7 @@ const Footer = () => {
           <span>GitHub</span>
         </Link>
       </div>
-      <p><small>&copy;&nbsp;2024&nbsp;It&apos;s Me</small></p>
+      <p><small>&copy;&nbsp;2025&nbsp;It&apos;s Me</small></p>
     </div>
   )
 }
