@@ -16,6 +16,7 @@ type Props = {
 }
 
 const Contents = ({ items }: Props) => {
+
   return (
     <div className="flex justify-center gap-8 items-start p-10 max-lg:flex-col max-lg:items-center max-lg:w-full">
       {items.map((item) => {
