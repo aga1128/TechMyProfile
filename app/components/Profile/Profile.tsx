@@ -18,8 +18,8 @@ const Profile = () => {
         <div>
           <p>
             広島県在住の29歳。<br />
-            昔から考えて答えを導くことが好きで、プログラミングというワードに惹かれHTML/CSSの学習を始める。<br />
-            現在はフロントエンドはNext.js・React・Vue、バックエンドはNestJS・Expressと幅広く学習を進めています。
+            昔から考えて答えを導くことが好きで、プログラミングというワードに惹かれHTML/CSSの学習を始めました。<br />
+            現在はJavaScriptのフレームワークに興味があり、フロントエンドはNext.js・React・Vue、バックエンドはNestJS・Expressと幅広く学習を進めています。
           </p>
         </div>
       </div>
